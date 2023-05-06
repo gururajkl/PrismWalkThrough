@@ -1,0 +1,17 @@
+The "shell" refers to the main application window or container that hosts and manages the 
+user interface of your application. 
+It serves as the top-level container for the views and controls within application.
+
+The shell provides the overall structure and layout for your application's user interface.
+It typically includes menu bars, toolbars, navigation elements, status bars, and any other 
+components that are persistent across different views or modules.
+
+Prism follows the concept of a "Composite Application" where the application's functionality 
+is divided into loosely coupled modules. The shell acts as a host for these modules, 
+providing the regions where the modules' views can be dynamically loaded and displayed.
+
+To create a new shell
+* After creating a new window in the View
+* Use Container.Resolve<type>();
+* Container is the property of the PrismApplication base class (DryIoc) where it resolves the instance
+of that type using the container.

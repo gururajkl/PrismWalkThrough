@@ -1,0 +1,19 @@
+Project Templates
+1. Blank project -> It sets up a minimal project structure with the necessary files and 
+configurations to get you started with Prism.
+
+2. Module project -> Module Project refers to a project template provided by Prism that 
+facilitates the creation of modular components within a Prism application.
+
+3. Full app project -> With unit testing compatibility, ready for the production app.
+
+Item Templates 
+1. UserControls
+2. Windows
+3. ViewModel
+More...
+
+Snipptes
+1. Propp -> property (depends on BindableBase)
+2. cmd -> DelegateCommand 
+3. cmdg -> DelegateCommand<T>
