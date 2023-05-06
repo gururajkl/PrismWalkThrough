@@ -1,0 +1,23 @@
+Regions are the placeholders for the dynamic content.
+
+* Injecting or displaying some contents in the shell window requires a regions to participate.
+
+* Regions refer to named areas within the user interface where views can be dynamically 
+loaded and displayed. Regions provide a way to organize and manage the layout of views 
+within a Prism application.
+
+* Prism provides navigation support for regions, allowing you to navigate between 
+views within a region or across different regions. This enables easy navigation and 
+UI flow within the application.
+
+Region manager
+* Maintains the collection of regions.
+* Provides the access to the regions.
+* Used for view composition.
+* Used for Region navigation.
+* Used to define regions.
+
+STEPS
+1. In a shell add the ContentControl
+2. Inside to that add prism:RegionManager.RegionName="ContentRegion"
+* This line adds the new region named ContentRegion to the region manager. THE REGION NAME MUST BE UNIQUE

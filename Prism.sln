@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentations", "Documenta
 	ProjectSection(SolutionItems) = preProject
 		Basics.txt = Basics.txt
 		HowToCreatePrismApp.txt = HowToCreatePrismApp.txt
+		Regions.txt = Regions.txt
 		What is shell.txt = What is shell.txt
 		What'sInPrismTemplatePack.txt = What'sInPrismTemplatePack.txt
 	EndProjectSection
