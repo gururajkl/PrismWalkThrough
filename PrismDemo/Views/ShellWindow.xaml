@@ -5,12 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="ShellWindow"
+        xmlns:prims="http://prismlibrary.com/"
         Height="450"
         Width="800">
     <Grid>
-        <TextBlock Text="Hello from prism"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="48" />
+        <StackPanel prims:RegionManager.RegionName="ContentRegion" />
     </Grid>
 </Window>

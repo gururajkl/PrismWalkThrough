@@ -1,0 +1,30 @@
+1. Derive the class from the RegionAdapterBase<T> where T could be any UI type ex: StackPanel
+
+	public class StackPanelRegionAdapter : RegionAdapterBase<StackPanel>
+
+2. Constructor should have the paramter as IRegionBehaviorFactory and needs to be passed to the base.
+
+	public StackPanelRegionAdapter(RegionBehaviorFactory regionBehaviorFactory)
+            : base(regionBehaviorFactory)
+        { }
+
+3. Override the CreateRegion method, which can return SingleActiveRegion, AllActiveRegion, Region
+	
+    protected override IRegion CreateRegion()
+    {
+        return new Region();
+    }
+
+4. Override the Adapt method that takes Region and it's target
+    
+    protected override void Adapt(IRegion region, StackPanel regionTarget)
+        { }
+
+5. Final step register the region adapter in App class.
+    
+    protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
+    {
+        base.ConfigureRegionAdapterMappings(regionAdapterMappings);
+        regionAdapterMappings.RegisterMapping(typeof(StackPanel),
+              Container.Resolve<StackPanelRegionAdapter>());
+    }

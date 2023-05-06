@@ -20,4 +20,22 @@ Region manager
 STEPS
 1. In a shell add the ContentControl
 2. Inside to that add prism:RegionManager.RegionName="ContentRegion"
-* This line adds the new region named ContentRegion to the region manager. THE REGION NAME MUST BE UNIQUE
+* This line adds the new region named ContentRegion to the region manager. THE REGION NAME MUST 
+BE UNIQUE.
+
+REGION ADAPTERS
+* Adapts (attaches) a view to the region.
+* Region adapters are components that facilitate the integration of regions within the WPF 
+(Windows Presentation Foundation) user interface framework. 
+They provide the necessary logic and behaviors to create, manage, and display regions 
+within WPF applications.
+
+Supported region adapters
+1. ContentControl Region adapters
+2. ItemControl Region adapters
+3. Selector Region adapters
+	- ComboBox
+	- ListBox
+	- Ribbon 
+	- Tab control
+4. Other than this requires an custom Region adapter.
