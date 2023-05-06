@@ -1,0 +1,30 @@
+* Prism was origanlly built by Microsoft Patterns and Practices team.
+
+* Prism is a framework for building modular, maintainable, and testable enterprise-level 
+applications using WPF.
+
+* Prism provides guidance and libraries to help developers create flexible and scalable applications 
+following the Model-View-ViewModel (MVVM) architectural pattern.
+
+* Prism was first released in 2008 as a project by the Patterns & Practices team, and 
+it has since gained popularity among WPF developers for its robustness and extensibility.
+
+* Prism is an ope source framework available in Github and it's part of the .NET foundation.
+
+FEATURES IT PROVIDES
+1. MVVM Support
+2. Commands
+3. Messaging
+4. Navgiation
+5. Dialog Services
+6. Modularity
+7. Dependency injection
+
+PRISM ON NUGET
+1. Core Packages
+	- Prism.Core
+	- Prism.Wpf
+
+2. Container Specific Packages
+	- Prism.DryIoc
+	- Prism.Unity
