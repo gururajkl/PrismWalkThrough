@@ -1,0 +1,11 @@
+After creating a new Project (WPF) in VS, go to App.xaml
+Step 1 -> Remove StartUpURI
+Step 2 -> Add namespace xmlns:prism="http://prism:library.com"
+Step 3 -> Then change the App to prism:PrismApplication
+
+Then go to App.xaml.cs
+Change the base class of the App class to PrismApplication, then override some abstract methods
+
+That's it.. The prism application setup is complete now.
+
+# Prism template pack reduces all these steps as it'll creates empty prism application for us.
