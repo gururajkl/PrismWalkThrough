@@ -1,5 +1,7 @@
 * Prism was origanlly built by Microsoft Patterns and Practices team.
 
+* Prism can also be considered as an XAML application framework.
+
 * Prism is a framework for building modular, maintainable, and testable enterprise-level 
 applications using WPF.
 
@@ -11,14 +13,46 @@ it has since gained popularity among WPF developers for its robustness and exten
 
 * Prism is an ope source framework available in Github and it's part of the .NET foundation.
 
+
 FEATURES IT PROVIDES
-1. MVVM Support
-2. Commands
-3. Messaging
-4. Navgiation
-5. Dialog Services
-6. Modularity
-7. Dependency injection
+1. MVVM Support -> Prism encourages the use of the MVVM pattern for separating the 
+user interface (View) from the underlying business logic (ViewModel) and data (Model). 
+This separation enhances testability, maintainability, and flexibility.
+
+2. Commands -> Prism offers a command infrastructure that simplifies the implementation of commands 
+in MVVM. It includes the DelegateCommand and DelegateCommand<T> and CompositeCommand classes, 
+which allow you to define and bind commands directly in your ViewModel. 
+Commands enable you to encapsulate actions or behaviors that can be triggered by user 
+interactions in the View.
+
+3. Event Aggregation -> Prism's Event Aggregator facilitates communication between loosely coupled 
+components or modules within an application. It enables decoupling and allows components to 
+communicate through loosely coupled events.
+
+4. Messaging -> Prism's Event Aggregator also supports the concept of messaging, 
+which allows loosely coupled components or modules to communicate with each other. 
+The Event Aggregator enables the publishing and subscribing to events (messages) 
+within the application. This decoupled communication mechanism is useful for scenarios 
+where direct component-to-component communication is not feasible or desirable.
+
+5. Navgiation -> Prism provides a robust navigation framework that simplifies the implementation 
+of navigation between different views or modules within an application. 
+It supports region-based navigation and supports deep-linking and parameter passing.
+
+6. Dialog Services -> Prism provides a mechanism for displaying dialogs or pop-up windows 
+from the ViewModel without directly coupling it to a specific UI framework. Dialog services 
+abstract away the UI-specific implementation details, allowing the ViewModel to trigger and 
+handle dialogs while remaining testable and decoupled from the UI framework. 
+Prism includes a IDialogService interface that you can implement to show dialogs or message boxes.
+
+7. Modularity -> Prism enables the development of large applications by dividing them 
+into separate modules. Modules can be independently developed, tested, and 
+deployed, allowing for easier code organization and reusability.
+
+8. Dependency injection -> Prism leverages the principles of dependency injection to achieve 
+loose coupling and facilitate the management of dependencies within an application. 
+It includes a built-in container for managing dependencies and supports constructor injection.
+
 
 PRISM ON NUGET
 1. Core Packages
@@ -28,3 +62,5 @@ PRISM ON NUGET
 2. Container Specific Packages
 	- Prism.DryIoc
 	- Prism.Unity
+
+# Prism Template can be installed through VS Market place OR through Extensions tab
