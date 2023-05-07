@@ -1,0 +1,38 @@
+* Module in prism is just an functional resposibility of our Application.
+
+* It's a self-contained unit that encapsulates a specific functionality or feature
+ of an application. 
+
+* Modules provide a way to organize and separate different parts of an application, 
+promoting modularity, reusability, and maintainability.
+
+* Any class / project / user control that implements the IModule interface it can be referred as 
+a module.
+
+* This interface needs to implement two methods.
+
+1. RegisterTypes(IContainerRegistery) -> 1st method invoked by prism.
+2. OnInitialized(IContainerProvider) -> 2nd method invoked by prism.
+
+WHAT IS MODULE CATALOG?
+* Module catalog is a container / list type that stores the information about the modules in an 
+application.
+
+*  It serves as a registry or repository of module metadata, allowing the application to discover, 
+load, and initialize the modules at runtime.
+
+WAYS TO REGISTER THE MODULES
+1. Code
+2. App.COnfig
+3. Disk / Directory
+4. XAML
+5. Custom
+
+After this register the Catalog with prism app.
+Then register the modules with catalog.
+
+1st way, CODE :
+Step 1: Add project reference to the main project.
+Step 2: Then in App.xaml.cs override the ConfigureModuleCatalog
+Step 3: AddTheModule<Type>()
+add the breakpoint in the Module class of the reference project and see.

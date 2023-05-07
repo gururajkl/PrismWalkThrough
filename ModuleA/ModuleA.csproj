@@ -1,22 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Prism.DryIoc" Version="7.2.0.1422" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ModuleA\ModuleA.csproj" />
+    <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
   </ItemGroup>
 
 </Project>
