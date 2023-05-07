@@ -1,0 +1,10 @@
+View discovery in Prism refers to the mechanism by which views are automatically 
+discovered and registered within the Prism application. 
+It allows you to define views in a modular and flexible way, reducing the 
+need for explicit view registration and enabling dynamic view composition.
+
+STEP 1: Create a view
+STEP 2: Inside the module class create "private readonly IRegionManager regionManager;" and
+	    inject to the ctor so DI container will resolve it.
+STEP 3: Use this inside the OnInitailized method() 
+		regionManager.RegisterViewWithRegion("regionName", typeof(ViewName));

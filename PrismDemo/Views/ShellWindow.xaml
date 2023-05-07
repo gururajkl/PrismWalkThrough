@@ -9,6 +9,6 @@
         Height="450"
         Width="800">
     <Grid>
-        <StackPanel prims:RegionManager.RegionName="ContentRegion" />
+        <ContentControl prims:RegionManager.RegionName="ContentRegion" />
     </Grid>
 </Window>

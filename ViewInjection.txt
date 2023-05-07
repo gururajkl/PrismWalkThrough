@@ -1,0 +1,11 @@
+InIn Prism, the process of injecting views into regions involves programmatically
+adding views to predefined regions within the user interface.
+Instead of relying solely on view discovery mechanisms, we explicitly control 
+the placement and composition of views within specific regions.
+
+STEP 1: get the region
+		IRegion region = regionManager.Regions["ContentRegion"];
+        var view1 = containerProvider.Resolve<ViewA>();
+		region.Add(view1);
+
+That's it, We can activate, DeActivate, Delete those views

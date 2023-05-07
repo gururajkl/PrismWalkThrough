@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentations", "Documenta
 		HowToCreatePrismApp.txt = HowToCreatePrismApp.txt
 		PrismModule.txt = PrismModule.txt
 		Regions.txt = Regions.txt
+		ViewDiscovery.txt = ViewDiscovery.txt
+		ViewInjection.txt = ViewInjection.txt
 		What is shell.txt = What is shell.txt
 		What'sInPrismTemplatePack.txt = What'sInPrismTemplatePack.txt
 	EndProjectSection
