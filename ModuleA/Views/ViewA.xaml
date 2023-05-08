@@ -8,10 +8,22 @@
              mc:Ignorable="d" 
              d:Background="White"
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <StackPanel>
         <TextBlock Text="{Binding Title}"
+                   Margin="10"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontSize="48" />
-    </Grid>
+
+        <CheckBox Content="Can Execute"
+                  Margin="10"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  IsChecked="{Binding CanExecute}"/>
+
+        <Button Content="Click"
+                Width="100"
+                Padding="20 10"
+                Command="{Binding ClickCommand}" />
+    </StackPanel>
 </UserControl>

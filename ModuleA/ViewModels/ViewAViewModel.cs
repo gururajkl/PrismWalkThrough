@@ -1,9 +1,5 @@
-﻿using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Prism.Commands;
+using Prism.Mvvm;
 
 namespace ModuleA.ViewModels
 {
@@ -14,6 +10,29 @@ namespace ModuleA.ViewModels
         {
             get { return title; }
             set { SetProperty(ref title, value); }
+        }
+
+        public DelegateCommand ClickCommand { get; private set; }
+
+        public ViewAViewModel()
+        {
+            ClickCommand = new DelegateCommand(Click)
+                .ObservesCanExecute(() => CanExecute);
+        }
+
+        private bool canExecute;
+        public bool CanExecute
+        {
+            get { return canExecute; }
+            set
+            {
+                SetProperty(ref canExecute, value);
+            }
+        }
+
+        private void Click()
+        {
+            Title = "Button Clicked";
         }
     }
 }
