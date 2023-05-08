@@ -1,0 +1,18 @@
+// Creating parameters
+var navParams = new NavigationParameters();
+navParams.Add("name", "Gururaj"); // Key value
+key and value can be of any type
+
+// Pass it like this
+RegionManager.RequestNavigate("RegionName", "ViewName", navParams);
+					
+								OR
+
+RegionManager.RequestNavigate("RN", "VM?name=guru&id=1") // passing like query string
+
+// Reading the parameters
+var id = (int)navigateContext.Parameters["ID"];
+
+								OR
+
+var id = navigateContext.Parameters.GetValue<int>("ID");

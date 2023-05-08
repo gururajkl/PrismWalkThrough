@@ -1,28 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using Prism.Regions;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Regions.Views
 {
-    /// <summary>
-    /// Interaction logic for ViewB.xaml
-    /// </summary>
-    public partial class ViewB : UserControl
+    public partial class ViewB : UserControl, INavigationAware
     {
         public ViewB()
         {
             InitializeComponent();
+        }
+
+        private int count = 0;
+
+        public bool IsNavigationTarget(NavigationContext navigationContext)
+        {
+            return true;
+        }
+
+        public void OnNavigatedFrom(NavigationContext navigationContext)
+        {
+            
+        }
+
+        public void OnNavigatedTo(NavigationContext navigationContext)
+        {
+            tbCount.Text = count++.ToString();
         }
     }
 }

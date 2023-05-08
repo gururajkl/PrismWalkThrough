@@ -5,9 +5,6 @@ using System.Windows;
 
 namespace PrismRegionNavigation
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App
     {
         protected override Window CreateShell()

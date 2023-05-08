@@ -25,7 +25,9 @@ namespace PrismRegionNavigation.ViewModels
 
         private void Navigate(string uri)
         {
-            regionManager.RequestNavigate("ContentRegion", uri);
+            var navParams = new NavigationParameters();
+            navParams.Add("key", "value");
+            regionManager.RequestNavigate("ContentRegion", uri, navParams);
         }
     }
 }

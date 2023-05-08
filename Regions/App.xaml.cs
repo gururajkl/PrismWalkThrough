@@ -1,13 +1,9 @@
 ﻿using Prism.Ioc;
-using Prism.Modularity;
 using Regions.Views;
 using System.Windows;
 
 namespace Regions
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App
     {
         protected override Window CreateShell()
