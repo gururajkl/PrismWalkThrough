@@ -1,0 +1,34 @@
+* It's an loosely coupled event-based communication.
+
+* The IEventAggregator is a component in Prism that facilitates the implementation 
+of the Event Aggregator pattern. It acts as a centralized event broker or message bus, 
+allowing loosely coupled communication between different components or modules in an application.
+
+* It may have multiple subscribers and publishers.
+
+* The Event Aggregator also allows to pass the parameter from one view to another view called as 
+payloads.
+	- Payloads are nothing but parameters / data such as classes or anything.
+
+* No worries of memory leaks as they're weak events.
+
+// Events
+public class SavedEvent : PubSubEvent<string>() {}
+
+// Publish event
+IEventAggregator.GetEvent<SavedEvent>().Publish("some value");
+
+// Subscriber
+IEventAggregator.GetEvent<SavedEvent>().Subscribe(SomethingSaved);
+
+// SomethingSaved delegate
+void SomethingSaved(string parameter) 
+{
+	// logic
+}
+
+TO Filter the events
+IEventAggregator.GetEvent<SavedEvent>().Subscribe(SomethingSaved, ThreadOption.Publisher, false,
+													p => p == "1");
+
+# Checkout the example in the Project folder in the D drive.
