@@ -27,13 +27,11 @@ namespace ModuleA
 
             var view2 = containerProvider.Resolve<ViewA>();
             view2.Content = new TextBlock()
-            { 
+            {
                 Text = "View 2",
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
             };
-            region.Deactivate(view1);
-            region.Add(view2);
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

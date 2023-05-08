@@ -1,0 +1,8 @@
+// Using Types
+ViewModelLocationProvider.Register<View, ViewModel>();
+
+// Using a Factory
+ViewModelLocationProvider.Register<View>(() => ViewModelInstance);
+
+These are the two types that a view and viewModel can register customatically and it's faster and
+does not use reflection.
