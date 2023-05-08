@@ -1,0 +1,16 @@
+// View registration
+ContainerRegistery.RegisterForNavigation<ViewA>();
+
+// View registration using custom name
+ContainerRegistery.RegisterForNavigation<ViewA>("CustomName");
+
+// Can also register ViewModel here
+ContainerRegistery.RegisterForNavigation<ViewA, ViewAViewModel>(); // Custom name can be given
+
+// To perform Nvaigation
+Resolve the instance of the IRegionManager
+regionManager.RequestNavigate("RegionName", "ViewName");
+
+// Or get the Iregion using key
+IRegion region = regionManager.Regions["RegionName"];
+region.RequestNavigate("ViewName");

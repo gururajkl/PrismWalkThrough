@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentations", "Documenta
 		IEventAggregator.txt = IEventAggregator.txt
 		PrismModule.txt = PrismModule.txt
 		Regions.txt = Regions.txt
+		ViewAndViewModelRegistrationForNavigation.txt = ViewAndViewModelRegistrationForNavigation.txt
 		ViewDiscovery.txt = ViewDiscovery.txt
 		ViewInjection.txt = ViewInjection.txt
 		What is shell.txt = What is shell.txt
@@ -30,6 +31,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeCommandModule", "CompositeCommandModule\CompositeCommandModule.csproj", "{B2AEA989-9E78-478D-98FD-64B820BF1A8E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeCommands.Core", "CompositeCommand.Core\CompositeCommands.Core.csproj", "{0042FF79-0DB3-4096-969A-FCB7CADFCCEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismRegionNavigation", "PrismRegionNavigation\PrismRegionNavigation.csproj", "{D19859FE-1037-429B-A361-7E0004F5974F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regions", "Regions\Regions.csproj", "{9A3B6A58-26E7-4F03-B437-B816B64FBDC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +66,14 @@ Global
 		{0042FF79-0DB3-4096-969A-FCB7CADFCCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0042FF79-0DB3-4096-969A-FCB7CADFCCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0042FF79-0DB3-4096-969A-FCB7CADFCCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D19859FE-1037-429B-A361-7E0004F5974F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19859FE-1037-429B-A361-7E0004F5974F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19859FE-1037-429B-A361-7E0004F5974F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19859FE-1037-429B-A361-7E0004F5974F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A3B6A58-26E7-4F03-B437-B816B64FBDC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3B6A58-26E7-4F03-B437-B816B64FBDC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3B6A58-26E7-4F03-B437-B816B64FBDC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3B6A58-26E7-4F03-B437-B816B64FBDC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
