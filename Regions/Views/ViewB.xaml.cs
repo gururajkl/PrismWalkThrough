@@ -24,7 +24,7 @@ namespace Regions.Views
 
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
-            tbCount.Text = count++.ToString();
+            tbCount.Text = $"{++count}";
         }
     }
 }
