@@ -1,0 +1,4 @@
+// Need to implement IConfirmNavigationRequest to the class
+// inside the method
+// (messagebox / dialogs) get the result either true or false
+// pass to ContinuationCallback(result);
