@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentations", "Documenta
 		HowToCreatePrismApp.txt = HowToCreatePrismApp.txt
 		IConfirmNavigationRequest.txt = IConfirmNavigationRequest.txt
 		IEventAggregator.txt = IEventAggregator.txt
+		NavigationJournal.txt = NavigationJournal.txt
 		NavigationReadingParameters.txt = NavigationReadingParameters.txt
 		PrismModule.txt = PrismModule.txt
 		Regions.txt = Regions.txt

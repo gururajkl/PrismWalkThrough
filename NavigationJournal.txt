@@ -1,0 +1,10 @@
+* It contains the history of Navigation what has been made.
+
+* Can be easily used to go backward and forward.
+
+* It records each time when we navigate.
+
+* has GoBack() and CanGoBacK(); and GoForward() and CanGoForward();
+
+// use
+NavigationContext.navigationService.Journal.GoBack() or GoForward();
