@@ -1,9 +1,11 @@
 ﻿using Prism.Mvvm;
 using Prism.Regions;
+using System;
+using System.Windows;
 
 namespace Regions.ViewModels
 {
-    public class ViewAViewModel : BindableBase, INavigationAware
+    public class ViewAViewModel : BindableBase, INavigationAware, IConfirmNavigationRequest
     {
         private int pageCount = 0;
         public int PageCount
@@ -34,6 +36,16 @@ namespace Regions.ViewModels
             var value = navigationContext.Parameters.GetValue<string>("key");
             PageCount++;
             Text = $"View A {value}";
+        }
+
+        public void ConfirmNavigationRequest(NavigationContext navigationContext, Action<bool> continuationCallback)
+        {
+            bool result = false;
+            if (MessageBox.Show("Do you want to continue", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                result = true;
+            }
+            continuationCallback(result);
         }
     }
 }
