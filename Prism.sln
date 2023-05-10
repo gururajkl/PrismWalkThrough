@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentations", "Documenta
 		HowToCreateCustomRegionAdapters.txt = HowToCreateCustomRegionAdapters.txt
 		HowToCreatePrismApp.txt = HowToCreatePrismApp.txt
 		IConfirmNavigationRequest.txt = IConfirmNavigationRequest.txt
+		IDialogAware.txt = IDialogAware.txt
 		IEventAggregator.txt = IEventAggregator.txt
 		NavigationJournal.txt = NavigationJournal.txt
 		NavigationReadingParameters.txt = NavigationReadingParameters.txt
@@ -38,6 +39,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismRegionNavigation", "PrismRegionNavigation\PrismRegionNavigation.csproj", "{D19859FE-1037-429B-A361-7E0004F5974F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regions", "Regions\Regions.csproj", "{9A3B6A58-26E7-4F03-B437-B816B64FBDC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismIDialog", "PrismIDialog\PrismIDialog.csproj", "{B311B5BB-DC9F-4C0B-A138-BF33D6F8ADFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +80,10 @@ Global
 		{9A3B6A58-26E7-4F03-B437-B816B64FBDC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A3B6A58-26E7-4F03-B437-B816B64FBDC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A3B6A58-26E7-4F03-B437-B816B64FBDC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B311B5BB-DC9F-4C0B-A138-BF33D6F8ADFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B311B5BB-DC9F-4C0B-A138-BF33D6F8ADFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B311B5BB-DC9F-4C0B-A138-BF33D6F8ADFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B311B5BB-DC9F-4C0B-A138-BF33D6F8ADFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

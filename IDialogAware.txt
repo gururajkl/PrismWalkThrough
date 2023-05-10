@@ -1,0 +1,8 @@
+public interface IDialogAware
+{
+	string Title {get;}
+	event Action<IDailogResult> RequestClose;
+	bool CanCloseDialog();
+	void OnDialogClosed();
+	void OnDialogOpened(IDialogParameters params);
+}
