@@ -3,7 +3,6 @@ using CompositeCommandModule.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
-using System.Windows.Controls;
 
 namespace CompositeCommandModule
 {

@@ -2,7 +2,6 @@
 using Prism.Mvvm;
 using Prism.Services.Dialogs;
 using PrismIDialog.Dialogs;
-using System;
 
 namespace PrismIDialog.ViewModels
 {

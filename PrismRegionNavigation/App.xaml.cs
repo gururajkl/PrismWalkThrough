@@ -16,7 +16,7 @@ namespace PrismRegionNavigation
         {
 
         }
-        
+
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             base.ConfigureModuleCatalog(moduleCatalog);
